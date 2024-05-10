@@ -26,11 +26,9 @@ namespace _01_write_comment_line
                kodun bu kısmının ne yaptığını 
                daha detaylı açıklamak için kullanılabilir. */
 
-
             // Console'da herhangi bir çıktı almak isteniyorsa Console.WriteLine fonksiyonu kullanılabilir.
             Console.WriteLine("Hollo World.");
 
-            
             // Console class'ının Write fonksiyonu, WriteLine fonksiyonu gibi konsol ekranında çıktı görüntülememizi sağlar.
             // WriteLine fonksiyonundan farklı olarak, Write fonksiyonu çıktıları yan yana görüntülerken, WriteLine fonksiyonu alt alta görüntüler.
             Console.Write("Hello");
@@ -42,7 +40,13 @@ namespace _01_write_comment_line
             // Console.ReadLine() fonksiyonu, asıl işlevi kullanıcıdan bir girdi almak olmasına rağmen, 
             // bir girdi girilene ve Enter tuşuna basılana kadar konsolun açık kalmasını sağlar.
             // Böylece, kullanıcı bir girdi yapmadığı sürece konsol penceresi kapanmaz.
+
+            Console.WriteLine("\nPlease Enter Your Name:");
+            string name = Console.ReadLine();
+            Console.WriteLine("User Name: " + name);
+        
             Console.ReadLine();
+
         }
 
     }
